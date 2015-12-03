@@ -1,0 +1,57 @@
+/*全清*/
+*{margin:0; padding:0; list-style:none; font:12px '宋体';}
+a{text-decoration:none;}
+/*全屏*/
+html,body{width:100%;height:100%;  position:relative;}
+/*导航*/
+.center_nav{width:1200px; height:130px; margin-top:50px; position:fixed; left:50%; top:1%; margin-left:-600px; z-index:10;}
+.center_nav .logo{width:260px; height:116px; position:absolute;left:0;bottom:0;}
+.center_nav .nav{width:979px; height:87px; background:url(../img/nav_bg.png) no-repeat; position:absolute;right:0;bottom:-10px;}
+.center_nav .nav .nav_ul01{width:727px; height:40px; position:absolute;top:0;right:9px;}
+.center_nav .nav .nav_ul01 li a{width:91px; height:40px;float:left; font:bold 16px/40px '宋体'; text-align: center;margin-right:15px; color:#F6F6F6;}
+.center_nav .nav .nav_ul01 li a:hover{background:url(../img/nav_hover.png) no-repeat;}
+.center_nav .nav .nav_ul01 li .li_margin_0{margin:0;}
+/*部分*/
+.skill{width:100%;height:100%; background:#00152a; z-index:3;}
+.skill .skill_bg{width:1100px; height:450px; position:absolute; left:50%; margin:215px 0 0 -550px;padding-top:50px; background:url(../img/talent_pic.png) no-repeat center center;}
+/*左中右结构*/
+.skill .skill_bg .skill_left{width:374px; height:374px; float:left;}
+/*图片旋转*/
+.skill .skill_bg .skill_left img{animation:donghua 5s linear infinite; -webkit-animation:donghua 5s linear infinite;}
+@keyframes donghua{
+	from{ transform:rotate(0deg);}
+	to  { transform:rotate(360deg);}
+}
+@-webkit-keyframes donghua{
+	from{ transform:rotate(0deg);}
+	to  { transform:rotate(360deg);}
+}
+.skill .skill_bg .skill_center{width:86px; height:30px; float:left; background:url(../img/talent_pic.jpg) no-repeat; text-align: center;}
+.skill .skill_bg .skill_center span{color:#fff;text-align: center; font:bold 16px/30px '宋体';}
+.skill .skill_bg .skill_right{width:auto; height:auto; float:left; cursor:pointer; margin-top:30px;}
+/*招聘信息*/
+.skill_right .skill_txt{border:2px solid #c2c2c2; padding:15px; color:#fff; width:auto; height:auto;}
+.skill_right .skill_txt dt{font:bold 14px '宋体'; margin:6px 0;}
+.skill_right .skill_txt dd{width:auto; height:auto;font:14px/22px '宋体';}
+/*鼠标*/
+.skill .skill_bg .skill_mouse{width:477px; height:65px; background:url(../img/mouse.png) no-repeat; position:absolute;left:180px;top:422px;}
+/*返回*/
+.skill_bg .button{width:77px; height:29px; background:url(../img/button.jpg) no-repeat; position:absolute; right:0; bottom:0; }
+.skill_bg .button a{width:77px; height:29px; font:bold 14px/25px "宋体";text-align:center; color:#111; padding-left:16px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

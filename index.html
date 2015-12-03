@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>轻量级科技首页</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="pagePiling.js plugin by Alvaro Trigo." />
+	<meta name="keywords"  content="pile,piling,piling.js,stack,pages,scrolling,stacking,touch,fullpile,scroll,plugin,jquery" />
+	<meta name="Resource-type" content="Document" />
+
+	
+	<link rel="stylesheet" type="text/css" href="style/index.css">
+	<link rel="stylesheet" type="text/css" href="jquery.pagepiling.css" />
+	
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+	<script src="pc.js"></script>
+	<script src="jquery.min.js"></script>
+	<script src="jquery-ui.min.js"></script>
+	
+	<script type="text/javascript" src="jquery.pagepiling.min.js"></script>
+	<script type="text/javascript">
+		var deleteLog = false;
+		
+		$(document).ready(function() {
+			if(window.location.href=='http://centlight.com/'){
+				$('#section1').find('.box01_banner').fadeIn(1800);
+			}else if(window.location.href=='http://www.centlight.com/'){
+				$('#section1').find('.box01_banner').fadeIn(1800);
+			} 
+	    	$('#pagepiling').pagepiling({
+	    		menu: '#menu',
+	    		anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7'],
+			    sectionsColor: ['#649700', '#09BCA1', '#2074A4', '#1C7C47', '#61279C', '#E77E23', '#AD31A9'],
+			    onLeave: function(index, nextIndex, direction){
+			    	if(deleteLog){
+			    		$('#callbacksDiv').html('');
+			    	}
+			    },
+			    afterLoad: function(anchorLink,index){
+			    	//section 1
+					 if(index == 1){
+						$('#section1').find('.box01_banner').fadeIn(3000);
+					} 
+ 
+			    	//section 2
+					 if(index == 2){
+						$('#section2').find('.intro').delay(100).animate({
+							left: '0%'
+						}, 500, 'easeOutExpo', function(){
+							$('#section2').find('p').first().fadeIn(700, function(){
+								$('#section2').find('p').last().fadeIn(600);
+							});
+						});
+					} 
+			    	
+					//section 4
+					 if(index == 4){
+						$('#section4').find('.intro').delay(100).animate({
+							left: '0%'
+						}, 500, 'easeOutExpo', function(){
+							$('#section4').find('p').first().fadeIn(700, function(){
+								$('#section4').find('p').last().fadeIn(600);
+							});
+						});
+
+
+					} 
+					
+					//section 5
+					 if(index == 5){
+						//moving the image
+						$('#section5').find('.intro').delay(100).animate({
+							left: '0%'
+						}, 500, 'easeOutExpo', function(){
+							$('#section5').find('p').first().fadeIn(700, function(){
+								$('#section5').find('p').last().fadeIn(600);
+							});
+						});
+
+
+					}
+					
+					//section 6
+					 if(index == 6){
+						//moving the image
+						$('#section6').find('.intro').delay(100).animate({
+							left: '0%'
+						}, 500, 'easeOutExpo', function(){
+							$('#section6').find('p').first().fadeIn(700, function(){
+								$('#section6').find('p').last().fadeIn(600);
+							});
+						});
+
+
+					}
+					
+					//section 7
+					 if(index == 7){
+						//moving the image
+						$('#section7').find('.contact_bg').delay(100).animate({
+							left: '0%'
+						}, 500, 'easeOutExpo');
+
+
+					}
+
+					//section 3
+					if(anchorLink == 'page3'){
+						//section 3
+						$('#section3').find('.intro').delay(100).animate({
+								left: '0%'
+						}, 500, 'easeOutExpo');
+					}
+					deleteLog = true;
+			    }
+			});
+	    });
+    </script>
+
+    <style>
+	#section1 .box01_banner{
+		display:none;
+    }
+    #section2 .intro{
+    	left: -150%;
+		position: relative;
+    }
+    #section3 .intro{
+    	left: 140%;
+		position: relative;
+    }
+	#section4 .intro{
+    	left: -150%;
+		position: relative;
+    }
+	#section5 .intro{
+    	left: 140%;
+		position: relative;
+    }
+	#section6 .intro{
+    	left: -150%;
+		position: relative;
+    }
+    #section7 .contact_bg{
+    	left:100%;
+    	position:absolute;
+    	top:30%;
+    	margin-left:15%;
+    }
+    </style>
+
+</head>
+<body>
+	<div class="nav">
+	<div class="logo">
+		<a href="#page1"><img src="img/nav_logo.png" height="116" width="260" alt=""></a>
+	</div>
+	<div class="center_nav">
+	<ul id="menu" class="nav_ul01">
+		<li data-menuanchor="page1" class="active"><a href="#page1">首&nbsp页</a></li>
+		<li data-menuanchor="page2"><a href="#page2">服务范围</a></li>
+		<li data-menuanchor="page3"><a href="#page3">公司简介</a></li>
+		<li data-menuanchor="page4"><a href="#page4">团队介绍</a></li>
+		<li data-menuanchor="page5"><a href="#page5">运营项目</a></li>
+		<li data-menuanchor="page6"><a href="#page6">招贤纳士</a></li>
+		<li data-menuanchor="page7"><a href="#page7">联系我们</a></li>
+	</ul>
+	</div>
+	</div>
+	<div id="pagepiling">
+	    <div class="section" id="section1">
+		    <div class="box01_banner">
+				<div class="box01_banner_left">
+					<img src="img/nav_txt.png" height="121" width="256" alt="">
+					<p>即使青春是一株大地伟岸的树 ， 一株独秀永远不是挺拔  成行成排的林木，才是遮风挡沙的绿色长城。即使青春是一叶大海孤高的帆，一叶孤帆很难远航，千帆竞发才是大海的壮观。</p>
+				</div>
+				<div class="box01_banner_right"></div>
+				
+			</div>
+			<a href="#page2" ><div class="down_arrow" id="arrow"></div></a>
+	    </div>
+	    <div class="section" id="section2">
+	    	<div class="intro">
+	    		<div class="range_content">
+					<div class="range_content_top"></div>
+					<div class="range_content_bottom">
+					<ul class="serve_ul">
+					<li>
+						<img src="img/serve_pic01.png" height="72" width="70" alt="">
+						<p>PC端网站设计<br><span>PC Web Design</span></p>
+					</li>
+					<li>
+						<img src="img/serve_pic02.png" height="72" width="45" alt="">
+						<p>移动端网站设计<br><span>WAP Browser</span></p>
+					</li>
+					<li>
+						<img src="img/serve_pic03.png" height="64" width="73" alt="">
+						<p>画册形象设计<br><span>Brochure Design</span></p>
+					</li>
+					<li class="serve">
+						<img src="img/serve_pic04.png" height="72" width="76" alt="">
+						<p>网站系统优化<br><span>SEO</span></p>
+					</li>
+					</ul>
+					</div>
+			    </div>
+	       </div>
+	    </div>
+	    <div class="section" id="section3">
+	    	<div class="intro">
+	    		<div class="about_top">
+			    	<div class="about_top_pic"></div>
+					<div class="about_bottom">
+					<ul>
+					<li class="li01">
+						<a href="http://www.quiteboot.com/" target="_blank"><span>o2o商城</span></a>
+					</li>
+					<li class="li02">
+						<a href="http://www.5188zc.com/" target="_blank"><span>仲筹工场</span></a>
+					</li>
+					<li class="li03">
+						<a href="#"><span>随身翻译</span></a>
+					</li>
+					</ul>
+					</div>
+	    		</div>
+	    	</div>
+	    </div>
+		<div class="section" id="section4">
+	    	<div class="intro">
+	    		<div class="team_content">
+				<div class="team_content_top"></div>
+				<div class="team_content_bottom"></div>
+				</div>
+	    	</div>
+	    </div>
+		<div class="section" id="section5">
+	    	<div class="intro">
+	    		<div class="run_box">
+					<div class="run_bg">
+						<div class="lyz_tab_left">
+							<div class="pro_con111">
+								<ul class="run_bg_left">
+									<li class="asd" id="one1" onclick="setTab(&#39;one&#39;,1,3)">快步云·服装城</li>
+									<li id="one2" onclick="setTab(&#39;one&#39;,2,3)">仲筹工场</li>
+									<li id="one3" onclick="setTab(&#39;one&#39;,3,3)">L2随身翻译器</li>
+								</ul>
+							</div>
+							<script language="javascript"> 
+								function setTab(name,cursel,n){
+									for(i=1;i<=n;i++){
+									var menu=document.getElementById(name+i);
+									var con=document.getElementById("con_"+name+"_"+i);
+									menu.className=i==cursel?"asd":"";
+									con.style.display=i==cursel?"block":"none";
+									}
+								}
+							</script>
+						</div>
+
+					<div class="run_pic">
+						<div class="run_bg_right_03" id="con_one_1">
+							<div>
+								<p>快步云推出的O2O互动商业平台... 快步云·服装城 商品 店铺 热门搜索: 秋装 去购物车结算 0 购物车中还没有商品,赶紧选购吧！</p><br><p>全部分类 首页 官方网站快步云推出的O2O互动商业平台。详细请登录快步云·服装城官方网站。</p>
+							</div>	
+						</div>
+						<div class="run_bg_right_02" id="con_one_2" style="display: none">
+							<div>
+								<p>自2014年开始，股权众筹已经逐渐成为资本圈里一个的热词，关于股权众筹的文章、新闻也越来越多。</p><p>在“大众创业、万众创新”的	政府导向和“互联网+”概念盛行的时代背景下，股权众筹作为一种基于互联网向不特定对象募集资金的新型融资渠道，在很大程度上激发了人	们的想象力。</p>
+								<p>本文旨在通过介绍股权众筹的基本概念，简要分析与股权众筹有关的中国法律法规，以及股权众筹在中国法下的发展现状及发展方向。</p>
+							</div>
+						</div>
+						<div class="run_bg_right_01" id="con_one_3" style="display: none">
+							<div>
+								<p>L2是一款云时代的移动翻译工具，可以吸纳整理用户自身的语言技能与需求，在碎片化时间里，智能匹配供需节点，实现多语言实时翻译对接。</p><p>适应用于各国精英沟通，也是自学语言的一种不可缺少的好助手。不要让沟通成为障碍</p><p>追求不同的人生，让自己去接受新的事物，L2随身翻译器它可能不会帮你打破学霸的记录，但一定可以让你突破自己的极限使你在学校、职场赢得优异的成绩。</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	    	</div>
+	    </div>
+	    <div class="section" id="section6">
+	    	<div class="intro">
+	    		<div class="engage_bg">
+					<div class="engage_left">
+						<div class="engage_pic"></div>
+						<ul>
+							<li><a href="child_ui.html" >UI设计<br><span>工程师</span></a></li>
+							<li><a href="child_web.html" >WEB前端<br><span>工程师</span></a></li>
+							<li class="engage_left_li03"><a href="child_php.html" >PHP开发<br><span>工程师</span></a></li>
+						</ul>
+					</div>
+					<div class="engage_right"></div>
+				</div>
+	    	</div>
+	    </div>
+	    <div class="section" id="section7">
+	    	<div class="intro">
+	    		<div class="contact_bg">
+					<div class="contact_left"></div>
+					<div class="contact_right"></div>
+					<div class="contact_txt">
+						<p>咨询电话：010-62416335</p>
+						<p>Email：centlight@centlight.com</p>
+						<p>地址：北京市海淀区中关村西区善缘街1号立方庭大厦</p>
+						<p>QQ：54939488  企业网址：www.centlight.com</p>
+					</div>
+				</div>
+			<div class="copy">
+			<p>@2015	 版权<span>&copy</span>所有 北京轻量级科技有限公司&nbsp&nbsp京ICP备15040273号</p>
+			</div>
+	    	</div>
+	    </div>
+	</div>
+
+</body>
+</html>

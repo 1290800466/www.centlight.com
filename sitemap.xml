@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="sitemap.xsl"?>
+<!-- Free Sitemap Generator http://www.sitemapx.com -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>http://www.centlight.com/</loc>
+<priority>1.0</priority>
+<lastmod>2015-10-27T03:03:35+00:00</lastmod>
+<changefreq>Always</changefreq>
+</url>
+<url>
+<loc>http://www.centlight.com/child_php.html</loc>
+<priority>0.8</priority>
+<lastmod>2015-10-19T09:48:08+00:00</lastmod>
+<changefreq>Always</changefreq>
+</url>
+<url>
+<loc>http://www.centlight.com/child_ui.html</loc>
+<priority>0.8</priority>
+<lastmod>2015-10-19T09:48:00+00:00</lastmod>
+<changefreq>Always</changefreq>
+</url>
+<url>
+<loc>http://www.centlight.com/child_web.html</loc>
+<priority>0.8</priority>
+<lastmod>2015-10-19T09:47:52+00:00</lastmod>
+<changefreq>Always</changefreq>
+</url>
+</urlset>
