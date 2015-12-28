@@ -1,0 +1,122 @@
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+body{
+	background: #abcdef;
+	cursor: default;
+}
+/*头部样式*/
+header{
+	margin: 0 auto;
+	width: 900px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+}
+
+/*中间样式*/
+section{
+	margin: 0 auto;
+	width: 880px;
+	height: 550px;
+	padding: 10px;
+	background:gray;
+}
+ul{
+	width: 880px;
+	height: 150px;
+}
+ul li{
+	float: left;
+	width: 175px;
+	height: 140px;
+	background:#eee;
+	text-align: center;
+	border-left: solid 1px gray; 
+}
+#img{ /*图像*/
+	padding: 25px;
+}
+#img li{
+	float: none;
+	width: 100px;
+	height: 30px;
+	border: none;
+	list-style:disc inside;
+}
+#img li button{
+	
+	padding: 2px 5px;
+}
+.means{ /*工具、形状*/
+	width: 150px;
+	padding:35px 25px;
+}
+.means li{
+	float: left;
+	width: 20px;
+	height: 20px;
+	padding: 0 10px;
+	margin-bottom: 10px;
+	border:solid 1px #999;
+}
+.means li:hover,
+#Line li:hover,
+#color li:hover
+{
+	border: solid 1px red;
+}
+#Line{ /*粗细*/
+	width: 150px;
+	padding:15px 35px;
+}
+#Line li{ 
+	float: none;
+	width: 100px;
+	height: 12px;
+	padding-bottom: 5px;
+	margin:0;
+	border:solid 1px #eee;
+}
+#color{ /*颜色*/
+	width: 150px;
+	padding: 35px 25px;
+}
+#color li{
+	float: left;
+	width: 20px;
+	height: 20px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	border:solid 1px #ccc;
+}
+#red{background:red}
+#green{background:green}
+#blue{background:blue}
+#yellow{background:yellow}
+#white{background:white}
+#black{background:black}
+#pink{background:#FF00FF}
+#purple{background:purple}
+#cyan{background:#8EE5EE}
+#orange{background:orange}
+canvas{
+	display: block;
+	margin: 0 auto;
+	background: #fff;
+	cursor: default;
+}
+/*canvas:hover{
+	cursor:crosshair;
+}*/
+
+/*底部样式*/
+footer{
+	margin: 0 auto;
+	width: 900px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+}

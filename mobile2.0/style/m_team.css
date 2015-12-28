@@ -1,0 +1,43 @@
+/*全清*/
+*{margin:0; padding:0; list-style:none; font-family:'黑体-简'; color:#fff; font-size:18px;}
+img{
+ width:auto;
+ height:auto;
+ max-width:100%;
+ max-height:100%;
+}
+/*背景*/
+html,body{width:100%; height:100%;}
+body{background:#208b8c;}
+/*.m_box01{width:100%; height:100%;background:url(../img/m_about_bg.png) no-repeat top left; background-size: 100% auto;}*/
+/*内容*/
+.m_jobs_top{width:100%; height:75px; background:rgba(0,0,0,0.3); text-align:center; position:relative;}
+/*标题和照片*/
+.m_jobs_top_pic{position:absolute;left:30px; top:50%; margin-top:-13px; width:40px; height:40px;}
+.m_jobs_top_txt{line-height:75px; font-size:34px; font-family:'微软雅黑';}
+/*内容*/
+.m_team_row{width:100%; height:auto;}
+.m_team_row_top{width:90%;padding:10px; position: relative;}
+.m_team_row_top_pic{width:91px; height:91px;}
+.m_team_row_top dl{position: absolute; left:110px; top:25%;}
+.m_team_row_top dl dt{font-size:22px; color:#dedede;}
+.m_team_row_top dl dd{font-size:30px;}
+/*内容下文字*/
+.m_team_row_txt{width:auto; height:auto; margin:0 10px; background:rgba(0,0,0,0.3); border-radius:3px; border:1px #444 solid; padding:10px;text-align:justify; text-indent:50px;}
+/*联系方式*/
+.m_jobs_foot{width:100%; height:64px; text-align: center; line-height:64px; font-size:26px; background:rgba(0,0,0,0.2); margin-top:24px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -12,12 +12,12 @@ if(system.win||system.mac||system.xll){
 	
 }else{
 	if(local=='http://www.centlight.com/child_web.html'){
-		window.location.href="http://www.centlight.com/mobile_web.html";
+		window.location.href="http://www.centlight.com/mobile2.0/m_jobs.html";
 	}else if(local=='http://www.centlight.com/child_ui.html'){
-		window.location.href="http://www.centlight.com/mobile_ui.html";
+		window.location.href="http://www.centlight.com/mobile2.0/m_jobs.html";
 	}else if(local=='http://www.centlight.com/child_php.html'){
-		window.location.href="http://www.centlight.com/mobile_php.html";
+		window.location.href="http://www.centlight.com/mobile2.0/m_jobs.html";
 	}else{
-		window.location.href="http://www.centlight.com/mobile.html";
+		window.location.href="http://www.centlight.com/mobile2.0/";
 	}
 }

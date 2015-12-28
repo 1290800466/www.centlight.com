@@ -1,0 +1,41 @@
+/*全清*/
+*{margin:0; padding:0; list-style:none;}
+img{
+ width:auto;
+ height:auto;
+ max-width:100%;
+ max-height:100%;
+}
+/*背景*/
+html,body{width:100%; height:100%;}
+/*背景*/
+.m_box{width:100%; height:100%;background:url(../img/m_bg01.png) no-repeat top right; padding-top:50px;background-size: 100% auto; }
+/*logo*/
+.m_logo{width:50%;margin-left:30px;}
+.m_banner_txt{width:50%;margin-left:50px; margin-top:52px;}
+/*导航*/
+.m_nav{width:90%; height:auto; margin:80px auto 0;}
+.m_nav ul{width:100%; height:auto;}
+.m_nav ul li{width:30%; height:auto; float:left;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
