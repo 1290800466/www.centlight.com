@@ -1,4 +1,4 @@
-User-agent: *
+User-agent: *1
 Disallow:
 
 Sitemap: http://www.centlight.com/sitemap.xml
